@@ -26,7 +26,9 @@ RUN apt-get install -y \
     xz-utils \
     debianutils \
     iputils-ping \
-    ncurses-dev
+    ncurses-dev \
+    vim \
+    mc
 RUN ln -sf /bin/bash /bin/sh
 RUN useradd -m -s /bin/bash -u $UID $USERNAME
 
