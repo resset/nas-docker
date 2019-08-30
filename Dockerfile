@@ -11,7 +11,6 @@ ENV MOUNT_DIR=/poky
 
 RUN apt-get update
 RUN apt-get install -y \
-
     gawk \
     wget \
     git-core \
