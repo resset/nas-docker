@@ -5,7 +5,6 @@ sudo docker run \
     --rm \
     --network=host \
     --hostname=nas-build \
-    --user="$USER" \
-    -v "$(realpath ../poky)":/poky \
-    -v /home/"$USER"/.gitconfig:/home/"$USER"/.gitconfig:ro \
+    -v "$(realpath ../poky)":/home/nas/poky \
+    -v /home/pillot/.gitconfig:/home/nas/.gitconfig:ro \
     nas_docker
