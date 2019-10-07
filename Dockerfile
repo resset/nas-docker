@@ -54,4 +54,6 @@ RUN mkdir -p $BUILD_DIR
 
 WORKDIR $BUILD_DIR
 
-CMD [ "/bin/bash" ]
+ENV TEMPLATECONF=$BUILD_DIR/meta-nas/custom
+
+CMD source $BUILD_DIR/oe-init-build-env && /bin/bash
