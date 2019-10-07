@@ -42,7 +42,6 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
 ENV USER_NAME nas
-ENV PROJECT nas
 
 ARG host_uid=1000
 ARG host_gid=1000
