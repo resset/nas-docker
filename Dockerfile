@@ -32,7 +32,8 @@ RUN apt-get install -y \
     ncurses-dev \
     vim \
     mc \
-    locales
+    locales \
+    screen
 
 RUN rm /bin/sh && ln -s bash /bin/sh
 
