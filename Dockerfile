@@ -33,7 +33,8 @@ RUN apt-get install -y \
     vim \
     mc \
     locales \
-    screen
+    screen \
+    tmux
 
 RUN rm /bin/sh && ln -s bash /bin/sh
 
