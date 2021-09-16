@@ -2,33 +2,35 @@
 # https://www.embeddeduse.com/2019/02/11/using-docker-containers-for-yocto-builds/
 # Thanks to the original author!
 
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 RUN apt-get update
 RUN apt-get install -y \
     gawk \
     wget \
-    git-core \
+    git \
     diffstat \
     unzip \
     texinfo \
-    gcc-multilib \
+    gcc \
     build-essential \
     chrpath \
     socat \
     cpio \
-    python \
     python3 \
     python3-pip \
     python3-pexpect \
-    xz-utils\
+    xz-utils \
     debianutils \
     iputils-ping \
     python3-git \
     python3-jinja2 \
     libegl1-mesa \
     libsdl1.2-dev \
+    pylint3 \
     xterm \
+    python3-subunit \
+    mesa-common-dev \
     ncurses-dev \
     vim \
     mc \
