@@ -31,12 +31,19 @@ RUN apt-get install -y \
     xterm \
     python3-subunit \
     mesa-common-dev \
+    make \
+    python3-pip \
     ncurses-dev \
     vim \
     mc \
     locales \
     screen \
     tmux
+
+RUN pip3 install \
+    sphinx \
+    sphinx_rtd_theme \
+    pyyaml
 
 RUN rm /bin/sh && ln -s bash /bin/sh
 
