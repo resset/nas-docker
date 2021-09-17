@@ -5,7 +5,7 @@
 FROM ubuntu:20.04
 
 RUN apt-get update
-RUN apt-get install -y \
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y \
     gawk \
     wget \
     git \
@@ -33,11 +33,9 @@ RUN apt-get install -y \
     mesa-common-dev \
     make \
     python3-pip \
-    ncurses-dev \
     vim \
     mc \
     locales \
-    screen \
     tmux
 
 RUN pip3 install \
